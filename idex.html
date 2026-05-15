@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESTP | Student Transportation in Egypt</title>
+    <meta
+      name="description"
+      content="ESTP provides safe, reliable, and affordable transportation services for students across Egypt."
+    />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="ESTP home">
+        <span class="brand-mark">E</span>
+        <span>
+          <strong>ESTP</strong>
+          <small>Egypt Student Transport</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#routes">Routes</a>
+        <a href="#safety">Safety</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-media" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1800&q=80"
+            alt=""
+          />
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Student transport across Egypt</p>
+          <h1>ESTP</h1>
+          <p class="hero-copy">
+            Safe, scheduled, and affordable rides for school and university students in Cairo, Giza,
+            Alexandria, and nearby cities.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#contact">Book a Ride</a>
+            <a class="btn secondary" href="#routes">View Routes</a>
+          </div>
+          <dl class="hero-stats" aria-label="ESTP highlights">
+            <div>
+              <dt>35+</dt>
+              <dd>Daily routes</dd>
+            </div>
+            <div>
+              <dt>24/7</dt>
+              <dd>Trip support</dd>
+            </div>
+            <div>
+              <dt>98%</dt>
+              <dd>On-time pickups</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section intro">
+        <div class="section-heading">
+          <p class="eyebrow">Built for families, schools, and students</p>
+          <h2>Reliable transport without the morning stress</h2>
+        </div>
+        <p>
+          ESTP helps students move between home, schools, universities, courses, and dorms with
+          organized routes, trained drivers, clear pickup times, and simple monthly plans.
+        </p>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2>Choose the ride plan that fits your schedule</h2>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="icon">↔</span>
+            <h3>Daily School Bus</h3>
+            <p>Fixed morning and afternoon rides for students with assigned pickup points.</p>
+          </article>
+          <article class="service-card">
+            <span class="icon">⌁</span>
+            <h3>University Shuttle</h3>
+            <p>Shared routes for campus students, with flexible subscriptions by area.</p>
+          </article>
+          <article class="service-card">
+            <span class="icon">◷</span>
+            <h3>Course Trips</h3>
+            <p>Evening and weekend transportation for lessons, clubs, and training centers.</p>
+          </article>
+          <article class="service-card">
+            <span class="icon">▣</span>
+            <h3>Private Groups</h3>
+            <p>Dedicated vans for small student groups, schools, and educational events.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="routes-band" id="routes">
+        <div class="routes-content">
+          <div>
+            <p class="eyebrow">Popular routes</p>
+            <h2>Coverage for Egypt’s busiest student areas</h2>
+            <p>
+              Start with a core route or request a custom pickup plan for your school, university,
+              or neighborhood.
+            </p>
+          </div>
+          <div class="route-list" aria-label="Route list">
+            <button class="route active" type="button" data-price="850">
+              <span>Cairo</span>
+              <strong>Nasr City → New Cairo</strong>
+            </button>
+            <button class="route" type="button" data-price="780">
+              <span>Giza</span>
+              <strong>Dokki → Sheikh Zayed</strong>
+            </button>
+            <button class="route" type="button" data-price="900">
+              <span>Alexandria</span>
+              <strong>Smouha → Borg El Arab</strong>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section split" id="safety">
+        <div class="visual-panel">
+          <img
+            src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=1200&q=80"
+            alt="A modern bus on the road"
+          />
+        </div>
+        <div class="content-panel">
+          <p class="eyebrow">Safety first</p>
+          <h2>Every trip is planned, tracked, and supported</h2>
+          <ul class="check-list">
+            <li>Verified drivers with student transport experience.</li>
+            <li>Vehicle checks before scheduled trips.</li>
+            <li>Pickup confirmation and trip updates for families.</li>
+            <li>Support line for route changes and urgent questions.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section estimator">
+        <div class="section-heading">
+          <p class="eyebrow">Quick estimate</p>
+          <h2>Plan your monthly student transport budget</h2>
+        </div>
+        <div class="estimator-box">
+          <label for="plan">Route plan</label>
+          <select id="plan">
+            <option value="850">Cairo: Nasr City to New Cairo</option>
+            <option value="780">Giza: Dokki to Sheikh Zayed</option>
+            <option value="900">Alexandria: Smouha to Borg El Arab</option>
+            <option value="1100">Custom student group route</option>
+          </select>
+
+          <label for="students">Number of students</label>
+          <input id="students" type="number" min="1" max="20" value="1" />
+
+          <div class="estimate-result" aria-live="polite">
+            <span>Estimated monthly total</span>
+            <strong id="estimate">850 EGP</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq">
+        <div class="section-heading">
+          <p class="eyebrow">Questions</p>
+          <h2>What families usually ask</h2>
+        </div>
+        <div class="faq-list">
+          <button class="faq-item" type="button">
+            <span>Can I request a pickup point near my home?</span>
+            <strong>+</strong>
+          </button>
+          <p class="faq-answer">
+            Yes. ESTP reviews requested pickup points and confirms availability based on route
+            timing and student safety.
+          </p>
+
+          <button class="faq-item" type="button">
+            <span>Do you support schools and universities directly?</span>
+            <strong>+</strong>
+          </button>
+          <p class="faq-answer">
+            Yes. Schools, universities, and training centers can request dedicated route planning
+            for their students.
+          </p>
+
+          <button class="faq-item" type="button">
+            <span>How do monthly subscriptions work?</span>
+            <strong>+</strong>
+          </button>
+          <p class="faq-answer">
+            Monthly plans are based on route, distance, pickup frequency, and number of students.
+            Our team confirms the final price before booking.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="contact-copy">
+          <p class="eyebrow">Book with ESTP</p>
+          <h2>Tell us where your student needs to go</h2>
+          <p>
+            Share the student area, destination, and preferred pickup time. The ESTP team will
+            contact you with route availability.
+          </p>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label>
+            Parent or student name
+            <input type="text" name="name" placeholder="Ahmed Hassan" required />
+          </label>
+          <label>
+            Phone number
+            <input type="tel" name="phone" placeholder="+20 100 000 0000" required />
+          </label>
+          <label>
+            Pickup area
+            <input type="text" name="area" placeholder="Nasr City, Cairo" required />
+          </label>
+          <label>
+            Destination
+            <input type="text" name="destination" placeholder="New Cairo campus" required />
+          </label>
+          <button class="btn primary" type="submit">Request Availability</button>
+          <p class="form-message" id="formMessage" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 ESTP. Student transportation services in Egypt.</p>
+      <a href="#home">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
